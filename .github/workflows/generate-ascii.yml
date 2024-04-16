@@ -9,14 +9,8 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
-            - name: Insatall cowsay
-              run: sudo apt-get install cowsay -y
-
-            - name: Execute cowsay command
-              run: cowsay -f dragon "Run for cover, Dragon feel a sneeze coming on." >> dragon.txt
-
-            - name: Test file exists
-              run: grep -i "dragon" dragon.txt
-              
             - name: List files
-              run: ls -ltra  
+              uses: ls -ltra  
+
+            - name: Excute script to install cowsay
+              run: ./ascii-script.sh
