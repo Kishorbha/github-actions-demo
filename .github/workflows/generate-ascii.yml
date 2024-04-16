@@ -11,7 +11,7 @@ jobs:
 
             - name: List files
               uses: ls -ltra  
-
+            
             - name: Excute script to install cowsay
               run: |
                chmod +x ascii-script.sh
