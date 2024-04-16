@@ -18,6 +18,7 @@ jobs:
                ./ascii-script.sh
 
     second_job:
+        needs: first_job
         runs-on: ubuntu-latest
         steps:
             - name: Sleep for 10s
