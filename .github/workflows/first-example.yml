@@ -14,6 +14,3 @@ jobs:
                 echo "My first github actions job"
                 ls -ltra
                 cat README.md
-
-            - name: Generate ASCII Artwork
-              run: cowsay -f dragon "Hi, iam SHERU" >> dragon.txt
